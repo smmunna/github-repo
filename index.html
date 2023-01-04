@@ -1,16 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github-rep</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    <h3>Github Repo</h3>
-    <h2>New will be added</h2>
-    <h3>None</h3>
-    <h4>Nothing to change</h4>
-    <h5>Nothing to Change Here</h5>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                    <ul class="dropdown">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <h3>Welcome to Our Web Page</h3>
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Age</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Mike</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Sam</td>
+                    <td>40</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section>
+            <fieldset>
+                <legend>Select Anyone option</legend>
+                <input type="radio" id="ab" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </fieldset>
+        </section>
+
+    </main>
 </body>
+
 </html>
