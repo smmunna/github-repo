@@ -7,6 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="style.css">
+   <style>
+    .field{
+        border: 2px solid black;
+    }
+    .bat{
+        transition: transform 0.5s ease-in;
+    }
+      .field:hover .bat{
+        transform: rotate(-60deg);
+        transform-origin: top right;
+      } 
+       .ball{
+        position: relative;
+        left: 532px;
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-radius: 25px;
+       }
+       .ball{
+        transition: transform 3s ease-out 0.5s;
+       }
+       .field:hover .ball{
+        transform: translate(500px, -300px);
+       }
+   </style>
 </head>
 
 <body>
@@ -21,23 +47,10 @@
         <h3>Welcome to Our Web Page</h3>
     </header>
     <main>
-        <h3>Blog Post 1
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptate necessitatibus nihil mollitia. Ratione voluptates id accusamus odio adipisci nam blanditiis aliquam sapiente unde consectetur eveniet error culpa voluptas cum quod, expedita commodi. Quia, odio incidunt. Soluta quidem nesciunt delectus blanditiis dolorum enim, optio inventore, iusto, in qui ad vero.</p>
-        </h3>
-        <h3>Blog Post 2
-            <p>Incidunt, aliquid eveniet. Minima quam repudiandae nesciunt? Provident obcaecati reprehenderit alias vitae possimus dicta maiores. Odit quas aliquid accusamus officiis, cupiditate mollitia quia exercitationem error vero dolorem distinctio consectetur explicabo architecto. Neque adipisci porro et. Iste molestiae ullam distinctio voluptas excepturi facilis maxime, optio soluta accusantium, sint doloribus omnis doloremque?</p>
-        </h3>
-        <h3>Blog Post 3
-            <p>Neque accusantium praesentium, placeat eos nihil atque, maiores id doloremque facilis deleniti, reprehenderit minima iste? Nam voluptas vero excepturi omnis dicta aliquid. Hic voluptate voluptas sequi magni repudiandae molestias sunt corrupti commodi culpa! Tempore reprehenderit numquam similique corrupti facilis eos vel sint repellat nesciunt omnis sit qui, magni saepe sunt.</p>
-        </h3>
-         <table>
-            <title>Table</title>
-            <tcaption>Here it is</tcaption>
-            <tr>
-                <th>No</th>
-                <th>Ok</th>
-            </tr>
-         </table>
+          <div class="field">
+                <img class="bat" src="media/bat.png" alt="">
+                <div class="ball"></div>
+          </div>
     </main>
 </body>
 

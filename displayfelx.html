@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5d0855b299.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --border: 2px solid red;
+            --font: arial;
+
+        }
+
+        .section-1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            gap: 20px;
+            border: var(--border);
+            padding: 15px;
+        }
+
+        .form input[type="text"] {
+            outline: transparent;
+            border: hidden;
+            border-bottom: 2px solid blue;
+            padding: 10px;
+            border-radius: 12px;
+        }
+
+        .form input[type="submit"] {
+            padding: 10px;
+            background-color: cyan;
+            border: none;
+            border-radius: 12px;
+        }
+
+        /* Navbar */
+        nav{
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a {
+            text-decoration: none;
+            color: rgb(7, 0, 0);
+            font-size: 20px;
+            margin: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Flex</h2>
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+                <a href="">Downloads</a>
+            </span>
+            <span>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+                <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+            </span>
+        </nav>
+    </header>
+    <section class="section-1">
+        <div class="form">
+            <h3>Please Logins</h3>
+            <input type="text" placeholder="Enter Email">
+            <input type="text" placeholder="Password">
+            <input type="submit" value="Login">
+        </div>
+    </section>
+
+</body>
+
+</html>
