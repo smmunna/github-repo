@@ -1,0 +1,63 @@
+/* Define grid areas */
+.header{
+    grid-area: header;
+}
+
+.nav{
+    grid-area: nav;
+}
+.main{
+    grid-area: main;
+}
+.aside{
+    grid-area: aside;
+}
+.ads{
+    grid-area:ads;
+}
+.footer{
+    grid-area: footer;
+}
+
+.ads, .aside, .footer , .header, .main, .nav{
+    background-color: antiquewhite;
+    border: 2px solid red;
+}
+/* Defining the Layouts */
+.grid-container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "header header header header"
+    "nav    main    main    aside"
+    "nav    main    main    ads"
+    "footer footer footer   footer"
+    ;
+}
+
+@media screen and (min-width:577px ) and (max-width:992px) {
+    .grid-container{
+        grid-template-columns: 4fr;
+        grid-template-areas: 
+        "header header header header"
+        "nav    main main main"
+        "nav    main main main"
+        "aside  aside aside aside"
+        "footer footer footer footer"
+        ;
+    }
+}
+@media screen and (max-width:576px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "ads"
+        "footer"
+        ;
+    }
+}
